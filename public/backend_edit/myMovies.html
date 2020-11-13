@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="cms.css">
+  <title>Document</title>
+  <script src="jquery-3.5.1.min.js"></script>
+  <script src="axios.min.js"></script>
+  <script type="module" src="js_vodCms/myMovies/appMyMovies.js"></script>
+  
+</head>
+
+<body>
+<!-- <header> -->
+  <main class="container-fluid p-0">
+    <div class="d-flex p-0">
+      <nav class="col-2  m-0 p-0">
+       
+      </nav>
+      <div class="col-9" id="display_info">
+       
+        <div class="container">
+          <h1>Movies that you uploaded:</h1>
+          <div class="text-center my-2">Pages: <span id="id_pages"></span></div>
+          <table class='table'>
+            <thead>
+              <th>#</th>
+              <th>title</th>
+              <th>img</th>
+              <th>code</th>
+              <th>info</th>
+              <th>category</th>
+              <th>likes</th>
+              <th>delete</th>
+              <th>edit</th>
+            </thead>
+            <tbody id="id_parent">
+
+            </tbody>
+          </table>
+          <div id="pages_show" class="text-center my-2">Pages: <span id="id_pages2"></span></div>
+         
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="ui/headerUi.js"></script>
+  <script src="ui/sideDisplay.js"></script>
+</body>
+
+</html>
